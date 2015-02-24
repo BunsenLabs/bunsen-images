@@ -1,2 +1,24 @@
 # bunsen-images
-Artwork for logos, icons, avatars
+Artwork for logos, icons, avatars, splashes, backgrounds
+
+
+Default Debian Artwork image sizes
+----------------------------------
+
+Wallpaper       png's @300ppi; + svg's at same size
+                    1280x1024,
+                    1600x1200,
+                    1920x1080,
+                    1920x1200,
+                    2560x1080
+
+GRUB2 splash    png 640x480 @96dpi; +svg
+
+
+Sys/isolinux    png 640x300 @300dpi; +svg
+
+
+Login           png 1920x1200 @300dpi; +svg's
+
+
+Splash          png 640x480 @90dpi; +svg
