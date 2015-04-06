@@ -1,0 +1,15 @@
+README
+======
+
+	These images were made for BunsenLabs	April 2015
+	
+	If you are using nitrogen to set the desktop background, then "zoomed-fill"
+	is usually the best setting if your screen resolution is different from
+	the supplied image sizes
+	
+	This is "mode=5" in .config/nitrogen/bg-saved.cfg
+	
+	
+	The same thing can be achieved using feh:
+	
+		feh --bg-fill image.png
