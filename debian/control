@@ -1,0 +1,17 @@
+Source: bunsen-images
+Section: x11
+Priority: optional
+Maintainer: John Crawley <john@rafflesnagoya.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+Homepage: https://github.com/BunsenLabs/bunsen-images
+#Vcs-Git: https://github.com/BunsenLabs/bunsen-images.git
+#Vcs-Browser: https://github.com/BunsenLabs/bunsen-images.git
+
+Package: bunsen-images
+Architecture: all
+Depends: ${misc:Depends}
+Description: Images for use with BunsenLabs
+ A collection of wallpapers, grub and login backgrounds,
+ icons and avatars, intended to fit the style of BunsenLabs.
+
