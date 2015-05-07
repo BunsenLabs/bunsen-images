@@ -1,3 +1,11 @@
+bunsen-images (0.1-2) unstable; urgency=low
+
+  * Change path for backgrounds from /usr/share/backgrounds/bunsen-images
+    to /usr/share/backgrounds/bunsen/bunsen-images.
+  * Merge wallpapers/README with README.
+
+ -- John Crawley <john@rafflesnagoya.com>  Thu, 07 May 2015 14:22:02 +0900
+
 bunsen-images (0.1-1) unstable; urgency=low
 
   * Initial release
