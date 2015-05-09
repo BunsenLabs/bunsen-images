@@ -26,6 +26,13 @@ include /usr/share/dpkg/default.mk
 #override_dh_auto_configure:
 #	dh_auto_configure -- \
 #	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
+override_dh_install:
+	tar -xf *.tar.gz
+	dh_install
+
+override_dh_clean:
+	dh_clean
+	rm -rf bl-default bl-grub bl-login icon-avatar svg wallpapers
 
 
 
