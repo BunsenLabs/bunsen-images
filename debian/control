@@ -5,8 +5,8 @@ Maintainer: John Crawley <john@rafflesnagoya.com>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.5
 Homepage: https://github.com/BunsenLabs/bunsen-images
-#Vcs-Git: https://github.com/BunsenLabs/bunsen-images.git
-#Vcs-Browser: https://github.com/BunsenLabs/bunsen-images.git
+Vcs-Git: https://github.com/BunsenLabs/bunsen-images.git
+Vcs-Browser: https://github.com/BunsenLabs/bunsen-images
 
 Package: bunsen-images
 Architecture: all
