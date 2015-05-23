@@ -1,4 +1,10 @@
-bunsen-images (0.1-4) UNRELEASED; urgency=low
+bunsen-images (0.1-5) unstable; urgency=low
+
+  * debian/copyright: Specify file source URL
+
+ -- Jens John <dev@2ion.de>  Sat, 23 May 2015 14:12:19 +0200
+
+bunsen-images (0.1-4) unstable; urgency=low
 
   * Revert archiving of image files.
 
