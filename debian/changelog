@@ -1,3 +1,9 @@
+bunsen-images (0.1-6) unstable; urgency=low
+
+  * Add BunsenLabs ASCII art
+
+ -- Jens John <dev@2ion.de>  Thu, 4 Jun 2015 14:39:57 +0200
+
 bunsen-images (0.1-5) unstable; urgency=low
 
   * debian/copyright: Specify file source URL
