@@ -14,4 +14,14 @@ Depends: ${misc:Depends}
 Description: Images for use with BunsenLabs
  A collection of wallpapers, grub and login backgrounds,
  icons and avatars, intended to fit the style of BunsenLabs.
+ .
+ This packages contains the artwork used in the default configuration.
 
+Package: bunsen-images-extra
+Architecture: all
+Depends: bunsen-images, ${misc:Depends}
+Description: Images for use with BunsenLabs
+ A collection of wallpapers, grub and login backgrounds,
+ icons and avatars, intended to fit the style of BunsenLabs.
+ .
+ This packages contains extra artwork.
