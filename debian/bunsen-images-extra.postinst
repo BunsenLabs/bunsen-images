@@ -1,0 +1,25 @@
+#!/bin/sh
+# postinst script for bunsen-images-extra
+
+set -e
+
+BL_GRUB_IMGDIR='/usr/share/backgrounds/bunsen/bunsen-images/bl-grub'
+
+case $1 in
+configure|abort-upgrade)
+    mkdir -p /usr/share/images/desktop-base
+    for i in "$BL_GRUB_IMGDIR"/*.png
+    do
+        [ -f "$i" ] || continue
+        update-alternatives --install /usr/share/images/desktop-base/desktop-grub.png  desktop-grub "$i" 25
+    done
+    if which update-grub > /dev/null ; then
+        sync
+        update-grub || true
+    fi
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

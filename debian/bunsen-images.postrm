@@ -1,0 +1,20 @@
+#!/bin/sh
+# postrm script for bunsen-images
+
+set -e
+
+case $1 in
+remove|deconfigure)
+    if which update-grub > /dev/null ; then
+        update-grub || true
+    fi
+    if which rmdir > /dev/null
+    then
+        rmdir --ignore-fail-on-non-empty /usr/share/images/desktop-base || true
+    fi
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

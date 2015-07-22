@@ -1,0 +1,24 @@
+#!/bin/sh
+# postinst script for bunsen-images
+
+set -e
+
+BL_GRUB_BACKGROUND=/usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-grub.png
+
+case $1 in
+configure|abort-upgrade)
+    if [ -f "$BL_GRUB_BACKGROUND" ]
+    then
+        mkdir -p /usr/share/images/desktop-base
+        update-alternatives --install /usr/share/images/desktop-base/desktop-grub.png  desktop-grub "$BL_GRUB_BACKGROUND" 30
+    fi
+    if which update-grub > /dev/null ; then
+        sync
+        update-grub || true
+    fi
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

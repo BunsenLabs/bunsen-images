@@ -1,0 +1,23 @@
+#!/bin/sh
+# prerm script for bunsen-images-extra
+
+set -e
+
+BL_GRUB_IMGDIR='/usr/share/backgrounds/bunsen/bunsen-images/bl-grub'
+
+case $1 in
+remove|deconfigure)
+    if altlist=$(update-alternatives --list desktop-grub 2>/dev/null)
+    then
+        for i in "$BL_GRUB_IMGDIR"/*.png
+        do
+            echo "$altlist" | grep -q "$i"  || continue
+            update-alternatives --remove desktop-grub "$i"
+        done
+    fi
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

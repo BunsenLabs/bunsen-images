@@ -1,0 +1,19 @@
+#!/bin/sh
+# prerm script for bunsen-images
+
+set -e
+
+BL_GRUB_BACKGROUND=/usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-grub.png
+
+case $1 in
+remove|deconfigure)
+    if update-alternatives --list desktop-grub >/dev/null 2>&1
+    then
+        update-alternatives --remove desktop-grub "$BL_GRUB_BACKGROUND"
+    fi
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0
