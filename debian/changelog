@@ -1,3 +1,9 @@
+bunsen-images (8.1-1) bunsen-hydrogen; urgency=medium
+
+  * Add more wallpaper contributions by Ututo
+
+ -- Jens John <dev@2ion.de>  Mon, 7 Sep 2015 18:40:14 +0200
+
 bunsen-images (8.0-1) unstable; urgency=low
 
   * Add maintainer scripts to handle desktop-grub alternative.
