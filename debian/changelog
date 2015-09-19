@@ -8,7 +8,7 @@ bunsen-images (8.0-1) unstable; urgency=low
 
   * Add maintainer scripts to handle desktop-grub alternative.
 
- -- John Crawley <john@rafflesnagoya.com>  Wed, 22 Jul 2015 17:21:59 +0900
+ -- John Crawley <john@bunsenlabs.org>  Wed, 22 Jul 2015 17:21:59 +0900
 
 bunsen-images (0.2-1) unstable; urgency=medium
 
@@ -32,13 +32,13 @@ bunsen-images (0.1-4) unstable; urgency=low
 
   * Revert archiving of image files.
 
- -- John Crawley <john@rafflesnagoya.com>  Tue, 12 May 2015 16:48:45 +0900
+ -- John Crawley <john@bunsenlabs.org>  Tue, 12 May 2015 16:48:45 +0900
 
 bunsen-images (0.1-3) unstable; urgency=low
 
   * Repack image files in .tar.gz file
 
- -- John Crawley <john@rafflesnagoya.com>  Sat, 09 May 2015 17:43:33 +0900
+ -- John Crawley <john@bunsenlabs.org>  Sat, 09 May 2015 17:43:33 +0900
 
 bunsen-images (0.1-2) unstable; urgency=low
 
@@ -46,10 +46,10 @@ bunsen-images (0.1-2) unstable; urgency=low
     to /usr/share/backgrounds/bunsen/bunsen-images.
   * Merge wallpapers/README with README.
 
- -- John Crawley <john@rafflesnagoya.com>  Thu, 07 May 2015 14:22:02 +0900
+ -- John Crawley <john@bunsenlabs.org>  Thu, 07 May 2015 14:22:02 +0900
 
 bunsen-images (0.1-1) unstable; urgency=low
 
   * Initial release
 
- -- John Crawley <john@rafflesnagoya.com>  Fri, 01 May 2015 15:09:51 +0900
+ -- John Crawley <john@bunsenlabs.org>  Fri, 01 May 2015 15:09:51 +0900
