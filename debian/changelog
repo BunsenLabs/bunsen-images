@@ -1,3 +1,10 @@
+bunsen-images (8.2-1) bunsen-hydrogen; urgency=medium
+
+  * nagybence: Include default CrunchBang Linux background tile: bl-tile.png
+  * damo: Add bl-flame-*-centre-* wallpaper variants
+
+ -- Jens John <dev@2ion.de>  Sat, 26 Sep 2015 13:52:35 +0200
+
 bunsen-images (8.1-1) bunsen-hydrogen; urgency=medium
 
   * Add more wallpaper contributions by Ututo
