@@ -1,3 +1,14 @@
+bunsen-images (8.3-1) bunsen-hydrogen; urgency=medium
+
+  * bunsen-images: Add default icon distributor-logo-bunsenlabs.svg
+     in usr/share/icons/hicolor/scalable/places
+     and add symlink usr/share/pixmaps/bunsenlabs-flame.svg pointing to it.
+  * bunsen-images-extra: Move contents of svg to icon-avatar.
+  * bunsen-images-extra: Change dependency on bunsen-images to recommend.
+  * Update README.
+
+ -- John Crawley <john@bunsenlabs.org>  Mon, 14 Dec 2015 13:57:16 +0900
+
 bunsen-images (8.2.1-1) bunsen-hydrogen; urgency=low
 
   * damo: Add Bunsenlabs-flame-256.svg
