@@ -6,11 +6,6 @@ bunsen-images
 Backgrounds will be installed as bl-default
 under /usr/share/backgrounds/bunsen/
 
-distributor-logo-bunsenlabs.svg will be installed
-under /usr/share/icons/hicolor/scalable/places
-and a symlink made as /usr/share/pixmaps/bunsenlabs-flame.svg
-pointing to that file.
-
 bunsen-images-extra
 -------------------
 Backgrounds will be installed as bl-grub, bl-login and wallpapers

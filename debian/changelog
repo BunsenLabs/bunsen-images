@@ -1,3 +1,10 @@
+bunsen-images (8.3.1-1) bunsen-hydrogen; urgency=low
+
+  * bunsen-images: Move distributor-logo-bunsenlabs.svg to bunsen-common.
+  * Amend README.
+
+ -- John Crawley <john@bunsenlabs.org>  Tue, 05 Jan 2016 15:18:03 +0900
+
 bunsen-images (8.3-1) bunsen-hydrogen; urgency=medium
 
   * bunsen-images: Add default icon distributor-logo-bunsenlabs.svg
