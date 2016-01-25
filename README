@@ -4,12 +4,12 @@ Artwork for logos, icons, avatars, splashes, backgrounds
 bunsen-images
 -------------
 Backgrounds will be installed as bl-default
-under /usr/share/backgrounds/bunsen/
+under /usr/share/backgrounds/bunsen/bunsen-images
 
 bunsen-images-extra
 -------------------
 Backgrounds will be installed as bl-grub, bl-login and wallpapers
-under /usr/share/backgrounds/bunsen/,
+under /usr/share/backgrounds/bunsen/bunsen-images,
 and other images as icon-avatar and asciiart
 under /usr/share/bunsen/bunsen-images/
 

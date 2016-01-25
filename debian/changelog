@@ -1,4 +1,11 @@
-bunsen-images (8.3.1-1) bunsen-hydrogen; urgency=low
+bunsen-images (8.3.2-1) bunsen-hydrogen; urgency=low
+
+  * README: Amend wallpaper image paths.
+  * debian/copyright: Update year.
+
+ -- John Crawley <john@bunsenlabs.org>  Mon, 25 Jan 2016 13:47:03 +0900
+
+bunsen-images (8.3.1-1) bunsen-hydrogen; urgency=medium
 
   * bunsen-images: Move distributor-logo-bunsenlabs.svg to bunsen-common.
   * Amend README.
