@@ -4,12 +4,21 @@
 set -e
 
 BL_GRUB_BACKGROUND=/usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-grub.png
+BL_LOGIN_BACKGROUND=/usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-login-1920x1200.png
 
 case $1 in
 remove|deconfigure)
     if update-alternatives --list desktop-grub >/dev/null 2>&1
     then
         update-alternatives --remove desktop-grub "$BL_GRUB_BACKGROUND"
+    fi
+    if update-alternatives --list bl-login-background >/dev/null 2>&1
+    then
+        update-alternatives --remove bl-login-background "$BL_LOGIN_BACKGROUND"
+    fi
+    if which update-grub > /dev/null ; then
+        sync
+        update-grub || true
     fi
     ;;
 esac

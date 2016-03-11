@@ -3,7 +3,8 @@
 
 set -e
 
-BL_GRUB_BACKGROUND=/usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-grub.png
+BL_GRUB_BACKGROUND='/usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-grub.png'
+BL_LOGIN_BACKGROUND='/usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-login-1920x1200.png'
 
 case $1 in
 configure|abort-upgrade)
@@ -11,6 +12,10 @@ configure|abort-upgrade)
     then
         mkdir -p /usr/share/images/desktop-base
         update-alternatives --install /usr/share/images/desktop-base/desktop-grub.png  desktop-grub "$BL_GRUB_BACKGROUND" 30
+    fi
+    if [ -f "$BL_LOGIN_BACKGROUND" ]
+    then
+        update-alternatives --install /usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-login-background bl-login-background "$BL_LOGIN_BACKGROUND" 30
     fi
     if which update-grub > /dev/null ; then
         sync

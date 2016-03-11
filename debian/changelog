@@ -1,3 +1,9 @@
+bunsen-images (8.4-1) bunsen-hydrogen; urgency=medium
+
+  * Create Debian alternative bl-login-background, add images.
+
+ -- John Crawley <john@bunsenlabs.org>  Fri, 11 Mar 2016 16:44:08 +0900
+
 bunsen-images (8.3.2-2) bunsen-hydrogen; urgency=low
 
   * Change Debian priority from optional to extra.

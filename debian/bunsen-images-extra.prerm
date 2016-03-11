@@ -4,6 +4,7 @@
 set -e
 
 BL_GRUB_IMGDIR='/usr/share/backgrounds/bunsen/bunsen-images/bl-grub'
+BL_LOGIN_IMGDIR='/usr/share/backgrounds/bunsen/bunsen-images/bl-login'
 
 case $1 in
 remove|deconfigure)
@@ -14,6 +15,18 @@ remove|deconfigure)
             echo "$altlist" | grep -q "$i"  || continue
             update-alternatives --remove desktop-grub "$i"
         done
+    fi
+    if altlist=$(update-alternatives --list bl-login-background 2>/dev/null)
+    then
+        for i in "$BL_LOGIN_IMGDIR"/*.png
+        do
+            echo "$altlist" | grep -q "$i"  || continue
+            update-alternatives --remove bl-login-background "$i"
+        done
+    fi
+    if which update-grub > /dev/null ; then
+        sync
+        update-grub || true
     fi
     ;;
 esac
