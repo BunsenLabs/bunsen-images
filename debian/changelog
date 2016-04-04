@@ -1,3 +1,9 @@
+bunsen-images (8.5-1) bunsen-hydrogen; urgency=medium
+
+  * Adjust image install paths and rename directories.
+
+ -- John Crawley <john@bunsenlabs.org>  Mon, 04 Apr 2016 17:35:06 +0900
+
 bunsen-images (8.4-1) bunsen-hydrogen; urgency=medium
 
   * Create Debian alternative bl-login-background, add images.

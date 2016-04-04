@@ -11,7 +11,7 @@ Vcs-Browser: https://github.com/BunsenLabs/bunsen-images
 Package: bunsen-images
 Architecture: all
 Depends: ${misc:Depends}
-Breaks: bunsen-images-extra (<< )
+Breaks: bunsen-images-extra (<< 8.5-1)
 Description: Images for use with BunsenLabs
  A collection of wallpapers, grub and login backgrounds,
  icons and avatars, intended to fit the style of BunsenLabs.
@@ -21,8 +21,8 @@ Description: Images for use with BunsenLabs
 Package: bunsen-images-extra
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: bunsen-images (>= )
-Breaks: bunsen-images (<< )
+Recommends: bunsen-images (>= 8.5-1)
+Breaks: bunsen-images (<< 8.5-1)
 Description: Images for use with BunsenLabs
  A collection of wallpapers, grub and login backgrounds,
  icons and avatars, intended to fit the style of BunsenLabs.
