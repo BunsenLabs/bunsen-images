@@ -3,8 +3,8 @@
 
 set -e
 
-BL_GRUB_IMGDIR='/usr/share/backgrounds/bunsen/bunsen-images/bl-grub'
-BL_LOGIN_IMGDIR='/usr/share/backgrounds/bunsen/bunsen-images/bl-login'
+BL_GRUB_IMGDIR='/usr/share/images/bunsen/grub'
+BL_LOGIN_IMGDIR='/usr/share/images/bunsen/login'
 
 case $1 in
 remove|deconfigure)

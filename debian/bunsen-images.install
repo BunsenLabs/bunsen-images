@@ -1,1 +1,3 @@
-bl-default usr/share/backgrounds/bunsen/bunsen-images
+bl-images/default-wallpapers/* usr/share/images/bunsen/wallpapers/default
+bl-images/bl-grub.png usr/share/images/bunsen/grub
+bl-images/bl-login-1920x1200.png usr/share/images/bunsen/login

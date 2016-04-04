@@ -3,19 +3,34 @@
 
 set -e
 
-BL_GRUB_BACKGROUND='/usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-grub.png'
-BL_LOGIN_BACKGROUND='/usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-login-1920x1200.png'
+BL_OLD_GRUB_BACKGROUND='/usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-grub.png'
+BL_OLD_LOGIN_BACKGROUND='/usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-login-1920x1200.png'
+
+BL_GRUB_BACKGROUND='/usr/share/images/bunsen/grub/bl-grub.png'
+BL_LOGIN_BACKGROUND='/usr/share/images/bunsen/login/bl-login-1920x1200.png'
+
+GRUB_ALT_LINK='/usr/share/images/desktop-base/desktop-grub.png'
+BL_LOGIN_ALT_LINK='/usr/share/images/bunsen/login/bl-login-background'
 
 case $1 in
 configure|abort-upgrade)
+    if altlist=$(update-alternatives --list desktop-grub 2>/dev/null) && echo "$altlist" | grep -q "^$BL_OLD_GRUB_BACKGROUND\$"
+    then
+        update-alternatives --remove desktop-grub "$BL_OLD_GRUB_BACKGROUND"
+    fi
+    if altlist=$(update-alternatives --list bl-login-background 2>/dev/null) && echo "$altlist" | grep -q "^$BL_OLD_LOGIN_BACKGROUND\$"
+    then
+        update-alternatives --remove bl-login-background "$BL_OLD_LOGIN_BACKGROUND"
+    fi
+
     if [ -f "$BL_GRUB_BACKGROUND" ]
     then
         mkdir -p /usr/share/images/desktop-base
-        update-alternatives --install /usr/share/images/desktop-base/desktop-grub.png  desktop-grub "$BL_GRUB_BACKGROUND" 30
+        update-alternatives --install "$GRUB_ALT_LINK" desktop-grub "$BL_GRUB_BACKGROUND" 30
     fi
     if [ -f "$BL_LOGIN_BACKGROUND" ]
     then
-        update-alternatives --install /usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-login-background bl-login-background "$BL_LOGIN_BACKGROUND" 30
+        update-alternatives --install "$BL_LOGIN_ALT_LINK" bl-login-background "$BL_LOGIN_BACKGROUND" 30
     fi
     if which update-grub > /dev/null ; then
         sync

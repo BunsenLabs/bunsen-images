@@ -1,5 +1,5 @@
-asciiart usr/share/bunsen/bunsen-images
-bl-grub usr/share/backgrounds/bunsen/bunsen-images
-bl-login usr/share/backgrounds/bunsen/bunsen-images
-icon-avatar usr/share/bunsen/bunsen-images
-wallpapers usr/share/backgrounds/bunsen/bunsen-images
+asciiart usr/share/images/bunsen
+icon-avatar usr/share/images/bunsen
+grub usr/share/images/bunsen
+login usr/share/images/bunsen
+wallpapers usr/share/images/bunsen

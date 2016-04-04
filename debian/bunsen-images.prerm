@@ -3,8 +3,8 @@
 
 set -e
 
-BL_GRUB_BACKGROUND=/usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-grub.png
-BL_LOGIN_BACKGROUND=/usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-login-1920x1200.png
+BL_GRUB_BACKGROUND='/usr/share/images/bunsen/grub/bl-grub.png'
+BL_LOGIN_BACKGROUND='/usr/share/images/bunsen/login/bl-login-1920x1200.png'
 
 case $1 in
 remove|deconfigure)

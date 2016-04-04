@@ -3,15 +3,23 @@ Artwork for logos, icons, avatars, splashes, backgrounds
 
 bunsen-images
 -------------
-Backgrounds will be installed as bl-default
-under /usr/share/backgrounds/bunsen/bunsen-images
+Desktop backgrounds will be installed in
+/usr/share/images/bunsen/wallpapers/default
+
+Grub and lightdm backgrounds will be installed as:
+/usr/share/images/bunsen/grub/bl-grub.png
+/usr/share/images/bunsen/login/bl-login-1920x1200.png
 
 bunsen-images-extra
 -------------------
-Backgrounds will be installed as bl-grub, bl-login and wallpapers
-under /usr/share/backgrounds/bunsen/bunsen-images,
+Backgrounds will be installed as grub, login and wallpapers
 and other images as icon-avatar and asciiart
-under /usr/share/bunsen/bunsen-images/
+under /usr/share/images/bunsen
+
+Debian alternatives will be set up for desktop-grub
+(in the standard location /usr/share/images/desktop-base/desktop-grub.png)
+and for bl-login-background in /usr/share/images/bunsen/login/bl-login-background
+
 
 Default Debian Artwork image sizes
 ----------------------------------
@@ -39,13 +47,13 @@ Notes about Wallpaper
 ---------------------
 
 These images were made for BunsenLabs	April 2015
-	
+
 If you are using nitrogen to set the desktop background, then "zoomed-fill"
 is usually the best setting if your screen resolution is different from
 the supplied image sizes
-	
+
 This is "mode=5" in .config/nitrogen/bg-saved.cfg
 
 The same thing can be achieved using feh:
-	
+
 	feh --bg-fill image.png
