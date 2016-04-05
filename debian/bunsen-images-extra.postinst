@@ -18,20 +18,16 @@ configure|abort-upgrade)
     then
         echo "$altlist" | while read -r line
         do
-            if [ "${line%/*}" = "$BL_OLD_GRUB_IMGDIR" ]
-            then
-                update-alternatives --remove desktop-grub "$line"
-            fi
+            [ "${line%/*}" = "$BL_OLD_GRUB_IMGDIR" ] || continue
+            update-alternatives --remove desktop-grub "$line"
         done
     fi
     if altlist=$(update-alternatives --list bl-login-background 2>/dev/null)
     then
         echo "$altlist" | while read -r line
         do
-            if [ "${line%/*}" = "$BL_OLD_LOGIN_IMGDIR" ]
-            then
-                update-alternatives --remove bl-login-background "$line"
-            fi
+            [ "${line%/*}" = "$BL_OLD_LOGIN_IMGDIR" ] || continue
+            update-alternatives --remove bl-login-background "$line"
         done
     fi
 
