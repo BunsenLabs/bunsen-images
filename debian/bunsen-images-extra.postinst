@@ -16,19 +16,23 @@ case $1 in
 configure|abort-upgrade)
     if altlist=$(update-alternatives --list desktop-grub 2>/dev/null)
     then
-        echo "$altlist" | while read -r line
+        while read -r line
         do
             [ "${line%/*}" = "$BL_OLD_GRUB_IMGDIR" ] || continue
             update-alternatives --remove desktop-grub "$line"
-        done
+        done << EOF
+$altlist
+EOF
     fi
     if altlist=$(update-alternatives --list bl-login-background 2>/dev/null)
     then
-        echo "$altlist" | while read -r line
+        while read -r line
         do
             [ "${line%/*}" = "$BL_OLD_LOGIN_IMGDIR" ] || continue
             update-alternatives --remove bl-login-background "$line"
-        done
+        done << EOF
+$altlist
+EOF
     fi
 
     mkdir -p /usr/share/images/desktop-base

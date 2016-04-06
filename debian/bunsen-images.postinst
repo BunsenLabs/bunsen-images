@@ -14,13 +14,27 @@ BL_LOGIN_ALT_LINK='/usr/share/images/bunsen/login/bl-login-background'
 
 case $1 in
 configure|abort-upgrade)
-    if update-alternatives --list desktop-grub >/dev/null 2>&1
+    if altlist=$(update-alternatives --list desktop-grub 2>/dev/null)
     then
-        update-alternatives --remove desktop-grub "$BL_OLD_GRUB_BACKGROUND"
+        while read -r line
+        do
+            [ "$line" = "$BL_OLD_GRUB_BACKGROUND" ] || continue
+            update-alternatives --remove desktop-grub "$BL_OLD_GRUB_BACKGROUND"
+            break
+        done << EOF
+$altlist
+EOF
     fi
-    if update-alternatives --list bl-login-background >/dev/null 2>&1
+    if altlist=$(update-alternatives --list bl-login-background 2>/dev/null)
     then
-        update-alternatives --remove bl-login-background "$BL_OLD_LOGIN_BACKGROUND"
+        while read -r line
+        do
+            [ "$line" = "$BL_OLD_LOGIN_BACKGROUND" ] || continue
+            update-alternatives --remove bl-login-background "$BL_OLD_LOGIN_BACKGROUND"
+            break
+        done << EOF
+$altlist
+EOF
     fi
 
     if [ -f "$BL_GRUB_BACKGROUND" ]
