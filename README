@@ -7,8 +7,8 @@ Desktop backgrounds will be installed in
 /usr/share/images/bunsen/wallpapers/default
 
 Grub and lightdm backgrounds will be installed as:
-/usr/share/images/bunsen/grub/bl-grub.png
-/usr/share/images/bunsen/login/bl-login-1920x1200.png
+/usr/share/images/bunsen/grub/default.png
+/usr/share/images/bunsen/login/default.png
 
 bunsen-images-extra
 -------------------
@@ -46,7 +46,7 @@ Splash          png 640x480 @90dpi; +svg
 Notes about Wallpaper
 ---------------------
 
-These images were made for BunsenLabs	April 2015
+These images were made for BunsenLabs by damo, using GIMP-2.9
 
 If you are using nitrogen to set the desktop background, then "zoomed-fill"
 is usually the best setting if your screen resolution is different from

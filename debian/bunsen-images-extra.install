@@ -1,5 +1,1 @@
-asciiart usr/share/images/bunsen
-icon-avatar usr/share/images/bunsen
-grub usr/share/images/bunsen
-login usr/share/images/bunsen
-wallpapers usr/share/images/bunsen
+bl-img-extra/* usr/share/images/bunsen
