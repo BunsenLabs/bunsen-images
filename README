@@ -21,8 +21,24 @@ Debian alternatives will be set up for desktop-grub
 and for bl-login-background in /usr/share/images/bunsen/login/bl-login-background
 
 
-Default Debian Artwork image sizes
-----------------------------------
+Notes about Wallpaper
+---------------------
+
+These images were made for BunsenLabs by damo, using GIMP-2.9
+
+If you are using nitrogen to set the desktop background, then "zoomed-fill"
+is usually the best setting if your screen resolution is different from
+the supplied image sizes
+
+This is "mode=5" in .config/nitrogen/bg-saved.cfg
+
+The same thing can be achieved using feh:
+
+	feh --bg-fill image.png
+
+
+Information for contributors: Default Debian Artwork image sizes
+----------------------------------------------------------------
 
 Wallpaper       png's @300ppi; + svg's at same size
                     1280x1024,
@@ -41,19 +57,3 @@ Login           png 1920x1200 @300dpi; +svg's
 
 
 Splash          png 640x480 @90dpi; +svg
-
-
-Notes about Wallpaper
----------------------
-
-These images were made for BunsenLabs by damo, using GIMP-2.9
-
-If you are using nitrogen to set the desktop background, then "zoomed-fill"
-is usually the best setting if your screen resolution is different from
-the supplied image sizes
-
-This is "mode=5" in .config/nitrogen/bg-saved.cfg
-
-The same thing can be achieved using feh:
-
-	feh --bg-fill image.png
