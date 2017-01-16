@@ -1,3 +1,9 @@
+bunsen-images (8.7-1) bunsen-hydrogen; urgency=medium
+
+  * Version bump for deuterium merge
+
+ -- John Crawley <john@bunsenlabs.org>  Mon, 16 Jan 2017 17:29:27 +0900
+
 bunsen-images (8.6-1) bunsen-hydrogen; urgency=medium
 
   * Postinst scripts: Refactor code
