@@ -3,12 +3,12 @@ Upstream-Name: bunsen-images
 Source: https://github.com/BunsenLabs/bunsen-images
 
 Files: *
-Copyright: 2015 damo <damo@bunsenlabs.org>
+Copyright: 2015-2016 damo <damo@bunsenlabs.org>
            2015 Ututo
 License: GPL-3.0+
 
 Files: debian/*
-Copyright: 2015-2016 John Crawley <john@bunsenlabs.org>
+Copyright: 2015-2017 John Crawley <john@bunsenlabs.org>
 License: GPL-3.0+
 
 License: GPL-3.0+

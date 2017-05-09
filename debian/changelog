@@ -1,3 +1,10 @@
+bunsen-images (9.0-1) helium; urgency=medium
+
+  * Version bump for helium.
+  * Update copyright dates.
+
+ -- John Crawley <john@bunsenlabs.org>  Tue, 09 May 2017 17:50:35 +0900
+
 bunsen-images (8.7-1) bunsen-hydrogen; urgency=medium
 
   * Version bump for deuterium merge
