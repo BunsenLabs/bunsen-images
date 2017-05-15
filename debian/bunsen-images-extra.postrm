@@ -3,11 +3,16 @@
 
 set -e
 
+GRUB_ALT_DIR='/usr/share/images/desktop-base'
+
 case $1 in
 remove|deconfigure)
-    if which rmdir > /dev/null
+    if ! dpkg -S "$GRUB_ALT_DIR" >/dev/null 2>&1 \
+    && [ -d "$GRUB_ALT_DIR" ] \
+    && [ -z "$(ls -A "$GRUB_ALT_DIR")" ] \
+    && which rmdir >/dev/null
     then
-        rmdir --ignore-fail-on-non-empty /usr/share/images/desktop-base || true
+        rmdir --ignore-fail-on-non-empty "$GRUB_ALT_DIR" || true
     fi
     ;;
 esac
