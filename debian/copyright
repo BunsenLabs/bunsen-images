@@ -5,7 +5,12 @@ Source: https://github.com/BunsenLabs/bunsen-images
 Files: *
 Copyright: 2015-2016 damo <damo@bunsenlabs.org>
            2015 Ututo
+           2017 hhh <hsumen@bunsenlabs.org>
 License: GPL-3.0+
+
+Files: bl-img/wallpapers/default/BL-beam*
+Copyright: 2017 Rashad Mohammed
+License: CC-BY-NC-3.0
 
 Files: debian/*
 Copyright: 2015-2017 John Crawley <john@bunsenlabs.org>
@@ -27,3 +32,10 @@ License: GPL-3.0+
  .
  On Debian systems, the complete text of the GNU General
  Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
+ 
+ License: CC-BY-NC-3.0
+ This work is licensed under the 
+ Creative Commons Attribution-NonCommercial 3.0 Unported License. 
+ To view a copy of this license, visit 
+ http://creativecommons.org/licenses/by-nc/3.0/ 
+ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
