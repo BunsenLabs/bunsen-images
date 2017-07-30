@@ -1,3 +1,9 @@
+bunsen-images (9.3.1-1) helium; urgency=low
+
+  * Add provisional Beam-style images for grub and login backgrounds.
+
+ -- John Crawley <john@bunsenlabs.org>  Sun, 30 Jul 2017 16:05:31 +0900
+
 bunsen-images (9.3-1) helium; urgency=medium
 
   * Adjust files for removal of bunsen-images-extra source.
