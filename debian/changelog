@@ -1,3 +1,9 @@
+bunsen-images (9.3-1) helium; urgency=medium
+
+  * Adjust files for removal of bunsen-images-extra source.
+
+ -- John Crawley <john@bunsenlabs.org>  Sun, 30 Jul 2017 12:30:04 +0900
+
 bunsen-images (9.2-1) helium; urgency=low
 
   * (Damo) Add unbranded Beam wallpapers.

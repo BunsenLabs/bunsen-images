@@ -10,21 +10,14 @@ Grub and lightdm backgrounds will be installed as:
 /usr/share/images/bunsen/grub/default.png
 /usr/share/images/bunsen/login/default.png
 
-bunsen-images-extra
--------------------
-Backgrounds will be installed as grub, login and wallpapers
-and other images as icon-avatar and asciiart
-under /usr/share/images/bunsen
-
 Debian alternatives will be set up for desktop-grub
 (in the standard location /usr/share/images/desktop-base/desktop-grub.png)
 and for bl-login-background in /usr/share/images/bunsen/login/bl-login-background
 
-
 Notes about Wallpaper
 ---------------------
 
-These images were made for BunsenLabs by damo, using GIMP-2.9
+These images were made for BunsenLabs by damo, using GIMP-2.9, and others.
 
 If you are using nitrogen to set the desktop background, then "zoomed-fill"
 is usually the best setting if your screen resolution is different from
