@@ -1,3 +1,9 @@
+bunsen-images (9.3.2-1) helium; urgency=medium
+
+  * Default backgrounds: adjust icon position (fixes GitHub issue #8)
+
+ -- John Crawley <john@bunsenlabs.org>  Fri, 26 Jan 2018 17:45:57 +0900
+
 bunsen-images (9.3.1-1) helium; urgency=low
 
   * Add provisional Beam-style images for grub and login backgrounds.
