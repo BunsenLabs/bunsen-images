@@ -1,3 +1,9 @@
+bunsen-images (9.4-1) helium; urgency=medium
+
+  * Remove BunsenLabs Hydrogen wallpapers, they are in bunsen-images-extra.
+
+ -- John Crawley <john@bunsenlabs.org>  Sun, 11 Feb 2018 18:37:16 +0900
+
 bunsen-images (9.3.2-1) helium; urgency=medium
 
   * Default backgrounds: adjust icon position (fixes GitHub issue #8)
