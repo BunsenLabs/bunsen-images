@@ -1,6 +1,6 @@
 Source: bunsen-images
 Section: x11
-Priority: extra
+Priority: optional
 Maintainer: John Crawley <john@bunsenlabs.org>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.5
@@ -17,14 +17,3 @@ Description: Images for use with BunsenLabs
  icons and avatars, intended to fit the style of BunsenLabs.
  .
  This package contains the artwork used in the default configuration.
-
-Package: bunsen-images-extra
-Architecture: all
-Depends: ${misc:Depends}
-Recommends: bunsen-images (>= 8.5-1)
-Breaks: bunsen-images (<< 8.5-1)
-Description: Images for use with BunsenLabs
- A collection of wallpapers, grub and login backgrounds,
- icons and avatars, intended to fit the style of BunsenLabs.
- .
- This package contains extra artwork.

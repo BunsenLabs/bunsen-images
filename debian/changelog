@@ -1,3 +1,72 @@
+bunsen-images (9.4.3-1) helium; urgency=medium
+
+  * Update .jpg wallpapers.
+
+ -- John Crawley <john@bunsenlabs.org>  Thu, 29 Mar 2018 15:50:22 +0900
+
+bunsen-images (9.4.2-1) helium; urgency=medium
+
+  [William Bradley]
+  * Add .jpg versions of default wallpapers for reduced banding.
+
+ -- John Crawley <john@bunsenlabs.org>  Fri, 16 Mar 2018 16:14:07 +0900
+
+bunsen-images (9.4.1-1) helium; urgency=medium
+
+  * Rename two images for case consistency.
+
+ -- John Crawley <john@bunsenlabs.org>  Tue, 20 Feb 2018 18:42:51 +0900
+
+bunsen-images (9.4-1) helium; urgency=medium
+
+  * Remove BunsenLabs Hydrogen wallpapers, they are in bunsen-images-extra.
+
+ -- John Crawley <john@bunsenlabs.org>  Sun, 11 Feb 2018 18:37:16 +0900
+
+bunsen-images (9.3.2-1) helium; urgency=medium
+
+  * Default backgrounds: adjust icon position (fixes GitHub issue #8)
+
+ -- John Crawley <john@bunsenlabs.org>  Fri, 26 Jan 2018 17:45:57 +0900
+
+bunsen-images (9.3.1-1) helium; urgency=low
+
+  * Add provisional Beam-style images for grub and login backgrounds.
+
+ -- John Crawley <john@bunsenlabs.org>  Sun, 30 Jul 2017 16:05:31 +0900
+
+bunsen-images (9.3-1) helium; urgency=medium
+
+  * Adjust files for removal of bunsen-images-extra source.
+
+ -- John Crawley <john@bunsenlabs.org>  Sun, 30 Jul 2017 12:30:04 +0900
+
+bunsen-images (9.2-1) helium; urgency=low
+
+  * (Damo) Add unbranded Beam wallpapers.
+
+ -- John Crawley <john@bunsenlabs.org>  Mon, 10 Jul 2017 10:53:20 +0900
+
+bunsen-images (9.1-1) helium; urgency=medium
+
+  * Add bl-img/wallpapers/default/BL-beam.png
+  * debian/copyright: add CC-BY-NC-3.0
+
+ -- John Crawley <john@bunsenlabs.org>  Fri, 07 Jul 2017 12:14:05 +0900
+
+bunsen-images (9.0-2) helium; urgency=medium
+
+  * Rebuild: previous error
+
+ -- John Crawley <john@bunsenlabs.org>  Mon, 12 Jun 2017 16:35:04 +0900
+
+bunsen-images (9.0-1) helium; urgency=medium
+
+  * Version bump for helium.
+  * Update copyright dates.
+
+ -- John Crawley <john@bunsenlabs.org>  Tue, 09 May 2017 17:50:35 +0900
+
 bunsen-images (8.7-1) bunsen-hydrogen; urgency=medium
 
   * Version bump for deuterium merge
