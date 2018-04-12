@@ -1,3 +1,9 @@
+bunsen-images (9.4.5-1) helium; urgency=medium
+
+  * Improve png wallpapers.
+
+ -- John Crawley <john@bunsenlabs.org>  Thu, 12 Apr 2018 16:27:28 +0900
+
 bunsen-images (9.4.4-1) helium; urgency=medium
 
   * Update2 .jpg wallpapers.
