@@ -6,7 +6,7 @@ set -e
 GRUB_ALT_DIR='/usr/share/images/desktop-base'
 
 case $1 in
-remove|deconfigure)
+remove|purge)
     if ! dpkg -S "$GRUB_ALT_DIR" >/dev/null 2>&1 \
     && [ -d "$GRUB_ALT_DIR" ] \
     && [ -z "$(ls -A "$GRUB_ALT_DIR")" ] \
