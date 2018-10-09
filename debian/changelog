@@ -1,3 +1,9 @@
+bunsen-images (9.4.7-1) helium; urgency=medium
+
+  * Use same default wallpaper for login background too.
+
+ -- John Crawley <john@bunsenlabs.org>  Tue, 09 Oct 2018 18:50:27 +0900
+
 bunsen-images (9.4.6-1) helium; urgency=medium
 
   * debian/postrm: bugfix ("deconfigure" is not an option)
