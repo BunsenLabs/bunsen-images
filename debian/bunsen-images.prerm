@@ -1,6 +1,13 @@
 #!/bin/sh
 # prerm script for bunsen-images
 
+# Summary of ways this script is called:
+#    prerm remove
+#    old-prerm upgrade new-version
+#    new-prerm failed-upgrade old-version
+#    conflictor's-prerm remove in-favour package new-version
+#    deconfigured's-prerm deconfigure in-favour package-being-installed version removing conflicting-package version
+
 set -e
 
 BL_GRUB_BACKGROUND='/usr/share/images/bunsen/grub/default.png'

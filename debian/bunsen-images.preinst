@@ -1,6 +1,12 @@
 #!/bin/sh
 # preinst script for bunsen-images
 
+# Summary of ways this script is called:
+#    new-preinst install
+#    new-preinst install old-version (some config files remain from a previous install)
+#    new-preinst upgrade old-version
+#    old-preinst abort-upgrade new-version
+
 set -e
 
 BL_OLD_DEFAULT_IMGDIR='/usr/share/backgrounds/bunsen/bunsen-images/bl-default'
