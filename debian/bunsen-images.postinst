@@ -10,11 +10,7 @@
 set -e
 
 BL_GRUB_BACKGROUND='/usr/share/images/bunsen/grub/default.png'
-BL_LOGIN_BACKGROUND='/usr/share/images/bunsen/wallpapers/default/BL-beam.png'
-BL_LOGIN_IMGDIR='/usr/share/images/bunsen/wallpapers/default'
-
 GRUB_ALT_LINK='/usr/share/images/desktop-base/desktop-grub.png'
-BL_LOGIN_ALT_LINK='/usr/share/images/bunsen/login/bl-login-background'
 
 case $1 in
 configure|abort-upgrade)
@@ -23,13 +19,6 @@ configure|abort-upgrade)
         mkdir -p /usr/share/images/desktop-base
         update-alternatives --install "$GRUB_ALT_LINK" desktop-grub "$BL_GRUB_BACKGROUND" 30
     fi
-    for i in "$BL_LOGIN_IMGDIR"/*.png
-    do
-        PRIORITY=25
-        [ -f "$i" ] || continue
-        [ "$i" = "$BL_LOGIN_BACKGROUND" ] && PRIORITY=30
-        update-alternatives --install "$BL_LOGIN_ALT_LINK" bl-login-background "$i" "$PRIORITY"
-    done
     if which update-grub > /dev/null ; then
         sync
         update-grub || true
