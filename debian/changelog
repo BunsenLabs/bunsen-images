@@ -1,3 +1,9 @@
+bunsen-images (9.4.7-2) helium; urgency=medium
+
+  * Remove Debian alternative "bl-login-background".
+
+ -- John Crawley <john@bunsenlabs.org>  Sun, 14 Oct 2018 14:09:13 +0900
+
 bunsen-images (9.4.7-1) helium; urgency=medium
 
   * Use same default wallpaper for login background too.
