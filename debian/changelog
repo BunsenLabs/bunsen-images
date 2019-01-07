@@ -1,3 +1,13 @@
+bunsen-images (10.0-1) lithium; urgency=medium
+
+  * Migrate to Lithium repository.
+  * Upgrade standards version to 4.3.0, debhelper compat to 10.
+  * Update README.
+  * Update copyright year.
+  * debian/rules: Remove comments.
+
+ -- John Crawley <john@bunsenlabs.org>  Mon, 07 Jan 2019 17:51:43 +0900
+
 bunsen-images (9.4.7-2) helium; urgency=medium
 
   * Remove Debian alternative "bl-login-background".
