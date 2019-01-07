@@ -6,13 +6,15 @@ bunsen-images
 Desktop backgrounds will be installed in
 /usr/share/images/bunsen/wallpapers/default
 
-Grub and lightdm backgrounds will be installed as:
+A grub background will be installed as
 /usr/share/images/bunsen/grub/default.png
-/usr/share/images/bunsen/login/default.png
 
-Debian alternatives will be set up for desktop-grub
-(in the standard location /usr/share/images/desktop-base/desktop-grub.png)
-and for bl-login-background in /usr/share/images/bunsen/login/bl-login-background
+And the default login background
+/usr/share/images/bunsen/login/default.png 
+is now a symlink to /usr/share/images/bunsen/wallpapers/default/BL-beam.png.
+
+A Debian alternative for desktop-grub will be set up 
+in the standard location /usr/share/images/desktop-base/desktop-grub.png.
 
 Notes about Wallpaper
 ---------------------
