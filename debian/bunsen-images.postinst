@@ -17,7 +17,8 @@ configure|abort-upgrade)
     if [ -f "$BL_GRUB_BACKGROUND" ]
     then
         mkdir -p /usr/share/images/desktop-base
-        update-alternatives --install "$GRUB_ALT_LINK" desktop-grub "$BL_GRUB_BACKGROUND" 30
+        update-alternatives --install "$GRUB_ALT_LINK" desktop-grub "$BL_GRUB_BACKGROUND" 40
+        update-alternatives --set desktop-grub "$BL_GRUB_BACKGROUND"
     fi
     if which update-grub > /dev/null ; then
         sync
