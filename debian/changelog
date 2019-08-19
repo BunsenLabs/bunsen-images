@@ -1,3 +1,9 @@
+bunsen-images (10.2-1) lithium; urgency=medium
+
+  * Rename BL default wallpapers.
+
+ -- John Crawley <john@bunsenlabs.org>  Mon, 19 Aug 2019 15:55:34 +0900
+
 bunsen-images (10.1-1) lithium; urgency=medium
 
   * Add provisional Moonlight background, for testing.
