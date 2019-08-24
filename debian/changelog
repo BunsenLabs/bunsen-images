@@ -1,3 +1,10 @@
+bunsen-images (10.2.1-1) lithium; urgency=medium
+
+  [ Damo ]
+  * Add BL-Fever_Room wallpaper.
+
+ -- John Crawley <john@bunsenlabs.org>  Sat, 24 Aug 2019 14:42:57 +0900
+
 bunsen-images (10.2-1) lithium; urgency=medium
 
   * Rename BL default wallpapers.
