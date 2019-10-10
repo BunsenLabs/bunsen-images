@@ -1,3 +1,11 @@
+bunsen-images (10.2.2-1) lithium; urgency=medium
+
+  [hhhorb]
+  * Add login background image, remove previous symlink to wallpaper.
+  * Adjust flame in grub splash to better match highlighted text.
+
+ -- John Crawley <john@bunsenlabs.org>  Thu, 10 Oct 2019 11:31:09 +0900
+
 bunsen-images (10.2.1-1) lithium; urgency=medium
 
   [ Damo ]
