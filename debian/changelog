@@ -1,3 +1,11 @@
+bunsen-images (10.2.3-1) lithium; urgency=medium
+
+  [ hhhorb ]
+  * Add Lithium grey wallpaper.
+  * Remove BL-Beam wallpapers.
+
+ -- John Crawley <john@bunsenlabs.org>  Fri, 08 Nov 2019 17:08:25 +0900
+
 bunsen-images (10.2.2-1) lithium; urgency=medium
 
   [hhhorb]
