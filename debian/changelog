@@ -1,3 +1,9 @@
+bunsen-images (10.2.5-1) lithium; urgency=medium
+
+  * Add two wallpapers for the Yeti themes.
+
+ -- John Crawley <john@bunsenlabs.org>  Tue, 24 Mar 2020 15:29:39 +0900
+
 bunsen-images (10.2.4-1) lithium; urgency=medium
 
   * Restore BL-beam-plain wallpaper for Helium BLOB users.
