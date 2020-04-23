@@ -1,8 +1,9 @@
-# bunsen-images and bunsen-images-extra
+# bunsen-images
 Artwork for logos, icons, avatars, splashes, backgrounds
 
 bunsen-images
 -------------
+
 Desktop backgrounds will be installed in
 /usr/share/images/bunsen/wallpapers/default
 
@@ -18,23 +19,21 @@ in the standard location /usr/share/images/desktop-base/desktop-grub.png.
 Notes about Wallpaper
 ---------------------
 
-These images were made for BunsenLabs by damo, using GIMP-2.9, and others.
-
 If you are using nitrogen to set the desktop background, then "zoomed-fill"
 is usually the best setting if your screen resolution is different from
-the supplied image sizes
+the supplied image sizes.
 
 This is "mode=5" in .config/nitrogen/bg-saved.cfg
 
 The same thing can be achieved using feh:
 
-	feh --bg-fill image.png
+    feh --bg-fill image.png
 
 
 Information for contributors: Default Debian Artwork image sizes
 ----------------------------------------------------------------
 
-Wallpaper       png's @300ppi; + svg's at same size
+Wallpaper       png's @300dpi; + svg's at same size
                     1280x1024,
                     1600x1200,
                     1920x1080,
