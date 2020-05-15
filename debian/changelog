@@ -1,3 +1,9 @@
+bunsen-images (10.2.6-1) lithium; urgency=medium
+
+  * Add "BL-networks" wallpaper for BL-Lithium-light theme.
+
+ -- John Crawley <john@bunsenlabs.org>  Fri, 15 May 2020 18:25:06 +0900
+
 bunsen-images (10.2.5-1) lithium; urgency=medium
 
   * Add two wallpapers for the Yeti themes.
