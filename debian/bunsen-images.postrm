@@ -20,7 +20,7 @@ remove|purge)
     if ! dpkg -S "$GRUB_ALT_DIR" >/dev/null 2>&1 \
     && [ -d "$GRUB_ALT_DIR" ] \
     && [ -z "$(ls -A "$GRUB_ALT_DIR")" ] \
-    && which rmdir >/dev/null
+    && command -v rmdir >/dev/null
     then
         rmdir --ignore-fail-on-non-empty "$GRUB_ALT_DIR" || true
     fi

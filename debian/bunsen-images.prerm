@@ -10,17 +10,17 @@
 
 set -e
 
-BL_GRUB_BACKGROUND='/usr/share/images/bunsen/grub/default.png'
+BL_GRUB_BACKGROUND='/boot/grub/images/bunsen/default.png'
 
 case $1 in
 remove|deconfigure)
     if update-alternatives --list desktop-grub >/dev/null 2>&1
     then
         update-alternatives --remove desktop-grub "$BL_GRUB_BACKGROUND"
-    fi
-    if which update-grub > /dev/null ; then
-        sync
-        update-grub || true
+        if command -v update-grub > /dev/null ; then
+            sync
+            update-grub || true
+        fi
     fi
     ;;
 esac
