@@ -1,3 +1,10 @@
+bunsen-images (11.1-1) beryllium; urgency=medium
+
+  * Move grub background images to /boot/grub/images/bunsen/ 
+     so they will be available if /usr is encrypted.
+
+ -- John Crawley <john@bunsenlabs.org>  Sat, 01 Jan 2022 18:16:11 +0900
+
 bunsen-images (11.0-1) beryllium; urgency=medium
 
   * Migrate for Debian Bullseye.
