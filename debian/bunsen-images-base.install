@@ -1,0 +1,3 @@
+bl-img-base/login usr/share/images/bunsen
+bl-img-base/wallpapers usr/share/images/bunsen
+bl-img-base/grub/* boot/grub/images/bunsen

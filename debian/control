@@ -10,10 +10,22 @@ Vcs-Browser: https://github.com/BunsenLabs/bunsen-images
 
 Package: bunsen-images
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, bunsen-images-base
 Breaks: bunsen-images-extra (<< 8.5-1)
-Description: Images for use with BunsenLabs
+Description: Alternative images for use with BunsenLabs
  A collection of wallpapers, grub and login backgrounds,
  intended to fit the style of BunsenLabs.
  .
- This package contains the artwork used in the default configuration.
+ This package contains some alternative artwork.
+
+Package: bunsen-images-base
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: bunsen-images
+Breaks: bunsen-images-extra (<< 8.5-1)
+Description: Images for use with BunsenLabs
+ The default wallpaper, grub and login backgrounds
+ used by BunsenLabs.
+ .
+ This package contains only the artwork used in the default configuration.
+ The package bunsen-images provides some alternative images.

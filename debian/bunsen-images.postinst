@@ -7,25 +7,27 @@
 #    conflictor's-postinst abort-remove in-favour package new-version
 #    deconfigured's-postinst abort-deconfigure in-favour failed-install-package version removing conflicting-package version
 
-set -e
+# desktop-grub now set by bunsen-images-base
 
-BL_GRUB_BACKGROUND='/boot/grub/images/bunsen/default.png'
-GRUB_ALT_LINK='/usr/share/images/desktop-base/desktop-grub.png'
+#set -e
 
-case $1 in
-configure|abort-upgrade|abort-deconfigure|abort-remove)
-    if [ -f "$BL_GRUB_BACKGROUND" ]
-    then
-        mkdir -p /usr/share/images/desktop-base
-        update-alternatives --install "$GRUB_ALT_LINK" desktop-grub "$BL_GRUB_BACKGROUND" 40
-        update-alternatives --set desktop-grub "$BL_GRUB_BACKGROUND"
-        if command -v update-grub > /dev/null ; then
-            sync
-            update-grub || true
-        fi
-    fi
-    ;;
-esac
+#BL_GRUB_BACKGROUND='/boot/grub/images/bunsen/default.png'
+#GRUB_ALT_LINK='/usr/share/images/desktop-base/desktop-grub.png'
+
+#case $1 in
+#configure|abort-upgrade|abort-deconfigure|abort-remove)
+#    if [ -f "$BL_GRUB_BACKGROUND" ]
+#    then
+#        mkdir -p /usr/share/images/desktop-base
+#        update-alternatives --install "$GRUB_ALT_LINK" desktop-grub "$BL_GRUB_BACKGROUND" 40
+#        update-alternatives --set desktop-grub "$BL_GRUB_BACKGROUND"
+#        if command -v update-grub > /dev/null ; then
+#            sync
+#            update-grub || true
+#        fi
+#    fi
+#    ;;
+#esac
 
 #DEBHELPER#
 
