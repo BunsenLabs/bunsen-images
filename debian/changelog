@@ -1,3 +1,18 @@
+bunsen-images (11.3-1) beryllium; urgency=medium
+
+  * Remove image name BL- prefixes, but make temporary symlinks
+     so existing configs will still work. Please update scripts etc
+     which use these images before the Boron release.
+  * Remove Beam grub splash image.
+     It will be available in bunsen-image-archives.
+  * Add alternative resolution default wallpapers.
+     There are now 1280x1024, 1440x900 and 1920x1080 sizes available.
+     The default is 1440x900.
+  * Add "default" symlinks for desktop and login backgrounds.
+     These will continue to be usable after release upgrades.
+
+ -- John Crawley <john@bunsenlabs.org>  Thu, 12 May 2022 14:46:20 +0900
+
 bunsen-images (11.2-2) beryllium; urgency=medium
 
   * Fix package relationships.
