@@ -13,7 +13,7 @@ Login backgrounds will be installed in
 And grub backgrounds will be installed in
 /boot/grub/images/bunsen/grub/
 
-A Debian alternative for desktop-grub will be set up
+Debian alternatives for desktop-grub will be set up
 in the standard location /usr/share/images/desktop-base/desktop-grub.png.
 
 bunsen-images-base
@@ -42,6 +42,7 @@ Information for contributors: Default Debian Artwork image sizes
 
 Wallpaper       png's @300dpi; + svg's at same size
                     1280x1024,
+                    1440x900,
                     1600x1200,
                     1920x1080,
                     1920x1200,
