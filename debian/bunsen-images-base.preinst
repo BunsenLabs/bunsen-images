@@ -1,5 +1,5 @@
 #!/bin/sh
-# preinst script for bunsen-images
+# preinst script for bunsen-images-base
 
 # Summary of ways this script is called:
 #    new-preinst install

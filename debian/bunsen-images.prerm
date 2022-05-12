@@ -8,24 +8,30 @@
 #    conflictor's-prerm remove in-favour package new-version
 #    deconfigured's-prerm deconfigure in-favour package-being-installed version removing conflicting-package version
 
-# desktop-grub is now set by bunsen-images-base
+# default desktop-grub is now set by bunsen-images-base
+# but alternative grub backgrounds are added by bunsen-images
 
-#set -e
+set -e
 
-#BL_GRUB_BACKGROUND='/boot/grub/images/bunsen/default.png'
+BL_GRUB_BACKGROUNDS='/boot/grub/images/bunsen/lithium.png
+'
 
-#case $1 in
-#remove|deconfigure)
-#    if update-alternatives --list desktop-grub >/dev/null 2>&1
-#    then
-#        update-alternatives --remove desktop-grub "$BL_GRUB_BACKGROUND"
-#        if command -v update-grub > /dev/null ; then
-#            sync
-#            update-grub || true
-#        fi
-#    fi
-#    ;;
-#esac
+case $1 in
+remove|deconfigure)
+    if update-alternatives --list desktop-grub >/dev/null 2>&1
+    then
+        while read -r image; do
+            update-alternatives --remove desktop-grub "$image"
+        done << EOF
+$BL_GRUB_BACKGROUNDS
+EOF
+        if command -v update-grub > /dev/null ; then
+            sync
+            update-grub || true
+        fi
+    fi
+    ;;
+esac
 
 #DEBHELPER#
 

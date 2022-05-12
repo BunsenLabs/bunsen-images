@@ -1,5 +1,5 @@
 #!/bin/sh
-# prerm script for bunsen-images
+# prerm script for bunsen-images-base
 
 # Summary of ways this script is called:
 #    prerm remove

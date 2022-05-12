@@ -7,27 +7,33 @@
 #    conflictor's-postinst abort-remove in-favour package new-version
 #    deconfigured's-postinst abort-deconfigure in-favour failed-install-package version removing conflicting-package version
 
-# desktop-grub now set by bunsen-images-base
+# desktop-grub default now set (with priority 50) by bunsen-images-base,
+# but alternative grub backgrounds added here (priority 40)
 
-#set -e
+set -e
 
-#BL_GRUB_BACKGROUND='/boot/grub/images/bunsen/default.png'
-#GRUB_ALT_LINK='/usr/share/images/desktop-base/desktop-grub.png'
+BL_GRUB_BACKGROUNDS='/boot/grub/images/bunsen/lithium.png
+'
 
-#case $1 in
-#configure|abort-upgrade|abort-deconfigure|abort-remove)
-#    if [ -f "$BL_GRUB_BACKGROUND" ]
-#    then
-#        mkdir -p /usr/share/images/desktop-base
-#        update-alternatives --install "$GRUB_ALT_LINK" desktop-grub "$BL_GRUB_BACKGROUND" 40
-#        update-alternatives --set desktop-grub "$BL_GRUB_BACKGROUND"
-#        if command -v update-grub > /dev/null ; then
-#            sync
-#            update-grub || true
-#        fi
-#    fi
-#    ;;
-#esac
+GRUB_ALT_LINK='/usr/share/images/desktop-base/desktop-grub.png'
+
+case $1 in
+configure|abort-upgrade|abort-deconfigure|abort-remove)
+    while read -r image; do
+        if [ -f "$image" ]
+        then
+            mkdir -p /usr/share/images/desktop-base
+            update-alternatives --install "$GRUB_ALT_LINK" desktop-grub "$image" 40
+        fi
+    done << EOF
+$BL_GRUB_BACKGROUNDS
+EOF
+    if command -v update-grub > /dev/null ; then
+        sync
+        update-grub || true
+    fi
+    ;;
+esac
 
 #DEBHELPER#
 

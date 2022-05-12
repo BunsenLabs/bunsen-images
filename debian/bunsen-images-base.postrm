@@ -1,5 +1,5 @@
 #!/bin/sh
-# postrm script for bunsen-images
+# postrm script for bunsen-images-base
 
 # Summary of ways this script is called:
 #    postrm remove

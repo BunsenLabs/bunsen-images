@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for bunsen-images
+# postinst script for bunsen-images-base
 
 # Summary of ways this script is called:
 #    postinst configure most-recently-configured-version(null if not upgrade)
@@ -17,7 +17,7 @@ configure|abort-upgrade|abort-deconfigure|abort-remove)
     if [ -f "$BL_GRUB_BACKGROUND" ]
     then
         mkdir -p /usr/share/images/desktop-base
-        update-alternatives --install "$GRUB_ALT_LINK" desktop-grub "$BL_GRUB_BACKGROUND" 40
+        update-alternatives --install "$GRUB_ALT_LINK" desktop-grub "$BL_GRUB_BACKGROUND" 50
         update-alternatives --set desktop-grub "$BL_GRUB_BACKGROUND"
         if command -v update-grub > /dev/null ; then
             sync
