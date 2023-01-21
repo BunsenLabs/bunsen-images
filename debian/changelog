@@ -1,7 +1,7 @@
 bunsen-images (12.0-1) boron; urgency=medium
 
   * Migrate for Debian Bookworm
-    + debian/control: Bump Standards-Version to 4.6.2.0 - no changes required.
+    + debian/control: Bump Standards-Version to 4.6.1.0 - no changes required.
     + debian/control: Declare debhelper compatibility 13.
     + debian/copyright: update year, add full CC-BY-NC-3.0 licence text.
 
