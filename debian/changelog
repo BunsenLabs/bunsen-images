@@ -1,3 +1,9 @@
+bunsen-images (12.1~dev4-1) boron; urgency=medium
+
+  * Provisionally add resized default wallpapers.
+
+ -- John Crawley <john@bunsenlabs.org>  Fri, 25 Aug 2023 15:35:29 +0900
+
 bunsen-images (12.1~dev3-1) boron; urgency=medium
 
   * Add Boron grub splash image.
