@@ -1,3 +1,9 @@
+bunsen-images (12.2-2) boron; urgency=medium
+
+  * bunsen-images and bunsen-images-base: update debian maintainer scripts.
+
+ -- John Crawley <john@bunsenlabs.org>  Sat, 28 Oct 2023 16:19:36 +0900
+
 bunsen-images (12.2-1) boron; urgency=medium
 
   * bunsen-images-base: add dark red "Ruby" wallpapers.
