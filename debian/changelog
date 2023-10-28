@@ -1,3 +1,10 @@
+bunsen-images (12.2-1) boron; urgency=medium
+
+  * bunsen-images-base: add dark red "Ruby" wallpapers.
+  * Move Boron-dark* wallpapers from bunsen-images-base  to bunsen-images.
+
+ -- John Crawley <john@bunsenlabs.org>  Sat, 28 Oct 2023 13:53:36 +0900
+
 bunsen-images (12.1~dev4-1) boron; urgency=medium
 
   * Provisionally add resized default wallpapers.
