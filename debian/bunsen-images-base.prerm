@@ -16,10 +16,13 @@ case $1 in
 remove|deconfigure)
     if update-alternatives --list desktop-grub >/dev/null 2>&1
     then
-        update-alternatives --remove desktop-grub "$BL_GRUB_BACKGROUND"
-        if command -v update-grub > /dev/null ; then
-            sync
-            update-grub || true
+        if [ -f "$BL_GRUB_BACKGROUND" ]
+        then
+            update-alternatives --remove desktop-grub "$BL_GRUB_BACKGROUND"
+            if command -v update-grub > /dev/null ; then
+                sync
+                update-grub || true
+            fi
         fi
     fi
     ;;

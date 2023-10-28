@@ -13,7 +13,7 @@
 
 set -e
 
-BL_GRUB_BACKGROUNDS='/boot/grub/images/bunsen/lithium.png
+BL_GRUB_BACKGROUNDS='/boot/grub/images/bunsen/beryllium.png
 '
 
 case $1 in
@@ -21,7 +21,10 @@ remove|deconfigure)
     if update-alternatives --list desktop-grub >/dev/null 2>&1
     then
         while read -r image; do
-            update-alternatives --remove desktop-grub "$image"
+            if [ -f "$image" ]
+            then
+                update-alternatives --remove desktop-grub "$image"
+            fi
         done << EOF
 $BL_GRUB_BACKGROUNDS
 EOF

@@ -12,7 +12,7 @@
 
 set -e
 
-BL_GRUB_BACKGROUNDS='/boot/grub/images/bunsen/lithium.png
+BL_GRUB_BACKGROUNDS='/boot/grub/images/bunsen/beryllium.png
 '
 
 GRUB_ALT_LINK='/usr/share/images/desktop-base/desktop-grub.png'
