@@ -1,3 +1,9 @@
+bunsen-images (12.2.1-1) boron; urgency=medium
+
+  * Remove some obsolete files.
+
+ -- John Crawley <john@bunsenlabs.org>  Tue, 12 Dec 2023 18:09:05 +0900
+
 bunsen-images (12.2-2) boron; urgency=medium
 
   * bunsen-images and bunsen-images-base: update debian maintainer scripts.
