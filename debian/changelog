@@ -1,3 +1,9 @@
+bunsen-images (12.2.1-2) boron; urgency=medium
+
+  * Delete copyright reference to removed file beam-plain.png
+
+ -- John Crawley <john@bunsenlabs.org>  Tue, 12 Dec 2023 18:16:07 +0900
+
 bunsen-images (12.2.1-1) boron; urgency=medium
 
   * Remove some obsolete files.
