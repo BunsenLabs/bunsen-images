@@ -1,3 +1,9 @@
+bunsen-images (12.2.2-1) boron; urgency=medium
+
+  * bunsen-images-base: grub default image: move logo away from menu area.
+
+ -- John Crawley <john@bunsenlabs.org>  Sat, 13 Jan 2024 18:15:11 +0900
+
 bunsen-images (12.2.1-2) boron; urgency=medium
 
   * Delete copyright reference to removed file beam-plain.png
