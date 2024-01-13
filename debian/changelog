@@ -1,3 +1,9 @@
+bunsen-images (12.2.3-1) boron; urgency=medium
+
+  * Revert unnecessary change to grub boot image.
+
+ -- John Crawley <john@bunsenlabs.org>  Sat, 13 Jan 2024 18:32:56 +0900
+
 bunsen-images (12.2.2-1) boron; urgency=medium
 
   * bunsen-images-base: grub default image: move logo away from menu area.
