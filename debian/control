@@ -22,7 +22,7 @@ Description: Alternative images for use with BunsenLabs
 Package: bunsen-images-base
 Architecture: all
 Depends: ${misc:Depends}
-Recommends: bunsen-images
+Suggests: bunsen-images
 Breaks: bunsen-images-extra (<< 8.5-1), bunsen-images (<< 11.2-1)
 Replaces: bunsen-images (<< 11.2-1)
 Description: Images for use with BunsenLabs
