@@ -13,11 +13,13 @@
 
 set -e
 
+# this package ships the previous release's grub background
+# current grub background is in bunsen-images-base
 BL_GRUB_BACKGROUNDS='/boot/grub/images/bunsen/beryllium.png
 '
 
 case $1 in
-remove|deconfigure)
+upgrade|remove|deconfigure)
     if update-alternatives --list desktop-grub >/dev/null 2>&1
     then
         while read -r image; do
