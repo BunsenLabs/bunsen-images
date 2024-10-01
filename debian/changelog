@@ -1,3 +1,10 @@
+bunsen-images (13.1-1) carbon; urgency=medium
+
+  * Add two wallpapers by Pavel Czervinski, set "bark" as default 
+     in bunsen-images-base, add licensing info.
+
+ -- John Crawley <john@bunsenlabs.org>  Tue, 01 Oct 2024 14:26:06 +0900
+
 bunsen-images (13.0-1) carbon; urgency=medium
 
   * Migrate for Debian Trixie:
