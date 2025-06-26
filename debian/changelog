@@ -1,3 +1,9 @@
+bunsen-images (13.2-1) carbon; urgency=medium
+
+  * Add default grub login splash image for "bark" theme.
+
+ -- John Crawley <john@bunsenlabs.org>  Thu, 26 Jun 2025 14:52:46 +0900
+
 bunsen-images (13.1-1) carbon; urgency=medium
 
   * Add two wallpapers by Pavel Czerwinski, set "bark" as default
