@@ -13,16 +13,16 @@
 
 set -e
 
-GRUB_ALT_DIR='/usr/share/images/desktop-base'
+DESKTOP_BASE_DIR='/usr/share/images/desktop-base'
 
 case $1 in
 remove|purge)
-    if ! dpkg -S "$GRUB_ALT_DIR" >/dev/null 2>&1 \
-    && [ -d "$GRUB_ALT_DIR" ] \
-    && [ -z "$(ls -A "$GRUB_ALT_DIR")" ] \
+    if ! dpkg -S "$DESKTOP_BASE_DIR" >/dev/null 2>&1 \
+    && [ -d "$DESKTOP_BASE_DIR" ] \
+    && [ -z "$(ls -A "$DESKTOP_BASE_DIR")" ] \
     && command -v rmdir >/dev/null
     then
-        rmdir --ignore-fail-on-non-empty "$GRUB_ALT_DIR" || true
+        rmdir --ignore-fail-on-non-empty "$DESKTOP_BASE_DIR" || true
     fi
     ;;
 esac

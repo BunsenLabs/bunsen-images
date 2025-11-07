@@ -9,9 +9,9 @@
 
 set -e
 
-BL_OLD_GRUB_BACKGROUND1='/usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-grub.png'
-BL_OLD_GRUB_BACKGROUND2='/usr/share/images/bunsen/grub/default.png'
-BL_OLD_GRUB_BACKGROUND3='/boot/grub/images/bunsen/lithium.png'
+BL_OLD_GRUB_BACKGROUNDS='/usr/share/backgrounds/bunsen/bunsen-images/bl-default/bl-grub.png
+/usr/share/images/bunsen/grub/default.png
+/boot/grub/images/bunsen/lithium.png'
 
 # bl-login-background now dropped
 if update-alternatives --list bl-login-background >/dev/null 2>&1
@@ -21,17 +21,14 @@ fi
 
 if altlist=$(update-alternatives --list desktop-grub 2>/dev/null)
 then
-    while read -r line
+    while read -r image
     do
-        for img in "$BL_OLD_GRUB_BACKGROUND1" "$BL_OLD_GRUB_BACKGROUND2" "BL_OLD_GRUB_BACKGROUND3"
-        do
-            if [ "$line" = "$img" ]
-            then
-                update-alternatives --remove desktop-grub "$img"
-            fi
-        done
+        case "$altlist" in
+        *"$image"*) update-alternatives --remove desktop-grub "$image";;
+        *)  ;;
+        esac
     done << EOF
-$altlist
+$BL_OLD_GRUB_BACKGROUNDS
 EOF
 fi
 
