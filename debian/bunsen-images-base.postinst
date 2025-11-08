@@ -22,15 +22,21 @@ GRUB_ALT_LINK="$DESKTOP_BASE_DIR/desktop-grub.png"
 case $1 in
 configure)
     mkdir -p "$DESKTOP_BASE_DIR"
-    if [ -f "$BL_GRUB_BACKGROUND" ] && ! update-alternatives --list desktop-grub | grep -q "$BL_GRUB_BACKGROUND"
+    if [ -f "$BL_GRUB_BACKGROUND" ] || [ -h "$BL_GRUB_BACKGROUND" ]
     then
-        update-alternatives --install "$GRUB_ALT_LINK" desktop-grub "$BL_GRUB_BACKGROUND" 50
+        if ! update-alternatives --list desktop-grub | grep -q "$BL_GRUB_BACKGROUND"
+        then
+            update-alternatives --install "$GRUB_ALT_LINK" desktop-grub "$BL_GRUB_BACKGROUND" 50
+        fi
         update-alternatives --set desktop-grub "$BL_GRUB_BACKGROUND"
     fi
     while read -r image; do
-        if [ -f "$image" ] && ! update-alternatives --list desktop-grub | grep -q "$image"
+        if [ -f "$image" ] || [ -h "$image" ]
         then
-            update-alternatives --install "$GRUB_ALT_LINK" desktop-grub "$image" 40
+            if ! update-alternatives --list desktop-grub | grep -q "$image"
+            then
+                update-alternatives --install "$GRUB_ALT_LINK" desktop-grub "$image" 40
+            fi
         fi
     done << EOF
 $BL_OTHER_GRUB_BACKGROUNDS

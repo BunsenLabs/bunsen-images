@@ -22,9 +22,12 @@ case $1 in
 configure)
     mkdir -p "$DESKTOP_BASE_DIR"
     while read -r image; do
-        if [ -f "$image" ] && ! update-alternatives --list desktop-grub | grep -q "$image"
+        if [ -f "$image" ] || [ -h "$image" ]
         then
-            update-alternatives --install "$GRUB_ALT_LINK" desktop-grub "$image" 40
+            if ! update-alternatives --list desktop-grub | grep -q "$image"
+            then
+                update-alternatives --install "$GRUB_ALT_LINK" desktop-grub "$image" 40
+            fi
         fi
     done << EOF
 $BL_GRUB_BACKGROUNDS
