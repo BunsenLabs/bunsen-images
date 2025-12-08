@@ -1,3 +1,22 @@
+bunsen-images (13.3-1) carbon; urgency=medium
+
+  * Update copyright information.
+  * Move Boron backgrounds from bunsen-images-base to bunsen-images.
+  * Remove Beryllium backgrounds - now in bunsen-image-archives.
+  * bunsen-images: remove old image  resolutions except 1920x1080.
+  * Adjust code in debian/control and maintainer scripts.
+  * Update documents.
+  [ hhhorb ]
+  * bunsen-images-base:
+    - add default bark and sage wallpapers 1440x900, with logo
+    - add symlink "default" to sage-logo_1440x900.png
+  * bunsen-images:
+    - add bark and sage wallpapers with and without logo,
+       with resolutions 1280x1024, 1440x900 and 1920x1080
+       ( except for two images in bunsen-images-base).
+
+ -- John Crawley <john@bunsenlabs.org>  Mon, 08 Dec 2025 11:46:02 +0900
+
 bunsen-images (13.2-1) carbon; urgency=medium
 
   * Add default grub login splash image for "bark" theme.
