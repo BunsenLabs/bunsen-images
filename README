@@ -7,10 +7,9 @@ bunsen-images
 Desktop backgrounds will be installed in
 /usr/share/images/bunsen/wallpapers/default/
 
-Login backgrounds will be installed in
-/usr/share/images/bunsen/login/
+The default login background will be installed by bunsen-images-base
 
-And grub backgrounds will be installed in
+Alternative grub backgrounds will be installed in
 /boot/grub/images/bunsen/grub/
 
 Debian alternatives for desktop-grub will be set up
@@ -23,18 +22,36 @@ This package provides only the default wallpaper, login and grub backgrounds.
 To get the alternative images install bunsen-images.
 To get the default images from older BunsenLabs releases, install bunsen-images-archives.
 
+Desktop backgrounds will be installed in
+/usr/share/images/bunsen/wallpapers/default/
+
+The default login background will be installed in
+/usr/share/images/bunsen/login as a symlink to
+/usr/share/images/bunsen/wallpapers/default/default
+which is itself a symlink to the default wallpaper.
+
+The default grub background will be installed in
+/boot/grub/images/bunsen/grub/
+
+Debian alternatives for desktop-grub will be set up
+in the standard location /usr/share/images/desktop-base/desktop-grub.png.
+
+
 Notes about Wallpaper
 ---------------------
 
-If you are using nitrogen to set the desktop background, then "zoomed-fill"
+If you are using feh or nitrogen to set the desktop background, then "zoomed-fill"
 is usually the best setting if your screen resolution is different from
 the supplied image sizes.
 
-This is "mode=5" in .config/nitrogen/bg-saved.cfg
-
-The same thing can be achieved using feh:
+This can be achieved using feh:
 
     feh --bg-fill image.png
+
+Or using nitrogen:
+
+    setting "mode=5" in .config/nitrogen/bg-saved.cfg
+
 
 
 Information for contributors: Default Debian Artwork image sizes
